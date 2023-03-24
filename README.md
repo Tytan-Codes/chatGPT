@@ -1,5 +1,5 @@
 # chatGPT
-This realese is stable. If you want the latest thing change the branch to beta.
+This realese is stable. ***If you want the latest thing change the branch to beta.***
 <br/>
 This script works on Mac, Windows, and Linux.
 ## How to install:
