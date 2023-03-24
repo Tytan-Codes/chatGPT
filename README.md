@@ -16,5 +16,7 @@ python3 main.py
 
 ### NOTE:
 
-This script has the 
+This script has the ___Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)__
+
+This means:
 
