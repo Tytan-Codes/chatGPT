@@ -32,7 +32,7 @@ current_commit = result.stdout.decode().strip()
 if current_commit == latest_commit:
     print("You are running the latest version of the script.")
 else:
-    os.system('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
     print(f"{Style.BRIGHT + Fore.RED}You are running an outdated version of the script.")
     print(f"{Style.BRIGHT}A new version of the script is available on GitHub.")
     print(f"{Style.BRIGHT}Latest commit: " + latest_commit)
@@ -61,7 +61,7 @@ def make_request(prompt):
 
 # Define function for generating an essay
 def essay():
-    subprocess.run('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
     print("Generating essay...")
     ess = str(input('Write me an essay about... '))
     response = make_request(ess)
@@ -72,7 +72,7 @@ def essay():
 
 # Define function for generating a story
 def story():
-    subprocess.run('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
     print("Generating story...")
     abt = str(input('Write me a story about... '))
     response = make_request(abt)
@@ -83,7 +83,7 @@ def story():
 
 # Define function for generating a resume
 def resume():
-    subprocess.run('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
     print("Generating resume...")
     good = str(input('What are you good at? '))
     get = str(input('What job are you trying to get? '))
@@ -106,7 +106,7 @@ def chat():
 
 # Define function for displaying the main menu
 def main_menu():
-    subprocess.run('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
     print(f'{Fore.RED + Style.BRIGHT}(1) Make {Fore.CYAN + Style.BRIGHT}GPT-3{Fore.RED + Style.BRIGHT} generate an essay.')
     print(f'{Fore.RED + Style.BRIGHT}(2) Make {Fore.CYAN + Style.BRIGHT}GPT-3{Fore.RED + Style.BRIGHT} generate a story.')
     print(f'{Fore.RED + Style.BRIGHT}(3) Make {Fore.CYAN + Style.BRIGHT}GPT-3{Fore.RED + Style.BRIGHT} generate a resume.')
