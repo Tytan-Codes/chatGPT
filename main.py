@@ -5,7 +5,6 @@ import os
 import argparse
 # Initialize colorama
 colorama.init(autoreset=True)
-import argparse
 import pyperclip
 import time
 import subprocess
