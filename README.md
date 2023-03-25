@@ -9,10 +9,17 @@ This script works on Mac, Windows, and Linux.
 
 HOW TO INSTALL:
 
-The first way is really easy.
+
+
+
 All you need to do is install the requirements.txt and then run the script, THATS ALL. :)
 ```
 pip install -r requirements.txt
+```
+
+Put your openAI [API KEY](https://platform.openai.com/account/api-keys) by running this command:
+```
+nano +13 main.py
 ```
 Then just run the script by doing:
 
@@ -20,11 +27,31 @@ Then just run the script by doing:
 python3 main.py
 ```
 
+
+
+### USAGE:
+
+```
+python3 main.py -h
+```
+```
+python3 main.py --essay
+```
+```
+Python3 main.py --chat
+```
+```
+python3 main.py --story
+```
+python3 main.py --resume
+```
+
+
 ### NOTE:
 
 This script has the __Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)__
 
-The licence is down below. READ IT.
+The license is down below. READ IT.
 <br/>
 <br/>
 <br/>

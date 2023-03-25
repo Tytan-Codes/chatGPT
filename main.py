@@ -6,10 +6,11 @@ import argparse
 # Initialize colorama
 colorama.init(autoreset=True)
 import argparse
-
-
+import pyperclip
+import time
 import subprocess
-
+# Set OpenAI API key
+openai.api_key = 'API KEY GOES HERE'
 # Set the GitHub repository URL and the script file name
 github_url = "https://github.com/tytan-codes/chatGPT.git"
 script_name = "main.py"
@@ -43,8 +44,7 @@ else:
 
 
 
-# Set OpenAI API key
-openai.api_key = 'API KEY GOES HERE'
+
 
 def make_request(prompt):
     response = openai.Completion.create(
@@ -62,20 +62,29 @@ def make_request(prompt):
 
 # Define function for generating an essay
 def essay():
+    subprocess.run('clear')
     print("Generating essay...")
     ess = str(input('Write me an essay about... '))
     response = make_request(ess)
     print('Reply: ' + response)
+    pyperclip.copy(response)
+    print(f'{Style.BRIGHT + Fore.RED}The response has been copied to clipboard.')
+    time.sleep(4)
 
 # Define function for generating a story
 def story():
+    subprocess.run('clear')
     print("Generating story...")
     abt = str(input('Write me a story about... '))
     response = make_request(abt)
     print('Reply: ' + response)
+    pyperclip.copy(response)
+    print(f'{Style.BRIGHT + Fore.RED}The response has been copied to clipboard.')
+    time.sleep(4)
 
 # Define function for generating a resume
 def resume():
+    subprocess.run('clear')
     print("Generating resume...")
     good = str(input('What are you good at? '))
     get = str(input('What job are you trying to get? '))
@@ -85,7 +94,10 @@ def resume():
     prompt = f'I would like you to make me a resume. I am good at {good}. The job I am trying to get is called {get}. My previous jobs are {jobs}. I am a good fit because {fit}.'
     response = make_request(prompt)
     print('Reply: ' + response)
-
+    pyperclip.copy(response)
+    print(f'{Style.BRIGHT + Fore.RED}The response has been copied to clipboard.')
+    time.sleep(4)
+    
 # Define function for chatting with GPT-3
 def chat():
     print("Generating response...")
@@ -95,6 +107,7 @@ def chat():
 
 # Define function for displaying the main menu
 def main_menu():
+    subprocess.run('clear')
     print(f'{Fore.RED + Style.BRIGHT}(1) Make {Fore.CYAN + Style.BRIGHT}GPT-3{Fore.RED + Style.BRIGHT} generate an essay.')
     print(f'{Fore.RED + Style.BRIGHT}(2) Make {Fore.CYAN + Style.BRIGHT}GPT-3{Fore.RED + Style.BRIGHT} generate a story.')
     print(f'{Fore.RED + Style.BRIGHT}(3) Make {Fore.CYAN + Style.BRIGHT}GPT-3{Fore.RED + Style.BRIGHT} generate a resume.')
