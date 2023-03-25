@@ -31,17 +31,23 @@ python3 main.py
 
 ### USAGE:
 
+List all args:
 ```
 python3 main.py -h
 ```
+Go straight into essay writter mode:
 ```
 python3 main.py --essay
 ```
+Start chatting:
 ```
 Python3 main.py --chat
 ```
+Go straight into story writter mode:
 ```
 python3 main.py --story
+```
+Go straight into resume writting mode:
 ```
 python3 main.py --resume
 ```
