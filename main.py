@@ -8,8 +8,43 @@ colorama.init(autoreset=True)
 import argparse
 
 
+import subprocess
+
+# Set the GitHub repository URL and the script file name
+github_url = "https://github.com/tytan-codes/chatGPT.git"
+script_name = "main.py"
+
+# Get the latest commit hash from the GitHub repository
+cmd = "git ls-remote " + github_url + " HEAD"
+result = subprocess.run(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+if result.returncode != 0:
+    print("Error getting latest commit hash from GitHub.")
+    exit()
+latest_commit = result.stdout.decode().split()[0]
+
+# Check if the latest commit is already downloaded
+cmd = "git rev-parse HEAD"
+result = subprocess.run(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+if result.returncode != 0:
+    print("Error getting current commit hash.")
+    exit()
+current_commit = result.stdout.decode().strip()
+if current_commit == latest_commit:
+    print("You are running the latest version of the script.")
+else:
+    os.system('clear')
+    print(f"{Style.BRIGHT + Fore.RED}You are running an outdated version of the script.")
+    print(f"{Style.BRIGHT}A new version of the script is available on GitHub.")
+    print(f"{Style.BRIGHT}Latest commit: " + latest_commit)
+    print(f"{Style.BRIGHT}Current commit: " + current_commit)
+    print(f"{Style.BRIGHT + Fore.RED}Please update by running update.py")
+    print(f'{Style.BRIGHT + Fore.RED}You updating will make your experience better')
+    exit()
+
+
+
 # Set OpenAI API key
-openai.api_key = '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'
+openai.api_key = 'API KEY GOES HERE'
 
 def make_request(prompt):
     response = openai.Completion.create(
