@@ -3,7 +3,11 @@
 <br/>
 This script works on Mac, Windows, and Linux.
 <br/>
-***How to install***
+
+
+<br/>
+
+HOW TO INSTALL:
 
 The first way is really easy.
 All you need to do is install the requirements.txt and then run the script, THATS ALL. :)
