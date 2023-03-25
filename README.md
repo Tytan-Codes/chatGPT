@@ -1,8 +1,13 @@
 # chatGPT
-This realese is stable. ***If you want the latest thing change the branch to beta.***
+
 <br/>
 This script works on Mac, Windows, and Linux.
-## How to install:
+<br/>
+
+
+<br/>
+
+HOW TO INSTALL:
 
 The first way is really easy.
 All you need to do is install the requirements.txt and then run the script, THATS ALL. :)
