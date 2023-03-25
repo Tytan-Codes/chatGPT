@@ -7,7 +7,7 @@ This script works on Mac, Windows, and Linux.
 
 <br/>
 
-HOW TO INSTALL:
+### HOW TO INSTALL:
 
 
 
