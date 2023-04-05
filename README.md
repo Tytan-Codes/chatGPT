@@ -1,5 +1,7 @@
 # chatGPT
 
+Need help? Go to out discord: https://discord.gg/DVV3HSAS
+
 <br/>
 This script works on Mac, Windows, and Linux.
 <br/>
