@@ -10,8 +10,6 @@ This script works on Mac, Windows, and Linux.
 ### HOW TO INSTALL:
 
 
-
-
 All you need to do is install the requirements.txt and then run the script, THATS ALL. :)
 ```
 pip install -r requirements.txt
