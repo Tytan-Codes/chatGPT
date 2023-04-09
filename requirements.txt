@@ -1,3 +1,4 @@
 colorama
 openai
 argparse
+pyperclip
