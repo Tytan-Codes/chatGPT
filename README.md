@@ -51,6 +51,6 @@ python3 main.py --resume
 
 ## License
 
-This script has the __Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)__  
+This script is protected under the __Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)__  
 
 [![Licence](https://img.shields.io/static/v1?label=LICENSE&message=CC%20BY-NC-ND%204.0&color=green?style=for-the-badge)](LICENSE)  
