@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 Put your openAI [API KEY](https://platform.openai.com/account/api-keys) by running this command:
 ```
-nano +13 main.py
+nano +12 main.py
 ```
 Then just run the script by doing:
 
