@@ -1,6 +1,6 @@
 # chatGPT  
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=sahil-sagwekar2652.sahil-sagwekar2652&left_color=blue&right_color=red)  
+![visitors](https://visitor-badge.glitch.me/badge?page_id=sahil-sagwekar2652.sahil-sagwkar2652&left_color=blue&right_color=red)  
 
 Need help? Go to our [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/qgnR8CCRE3)  
 
