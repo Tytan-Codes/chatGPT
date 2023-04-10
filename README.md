@@ -2,6 +2,7 @@
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=sahil-sagwekar2652.sahil-sagwkar2652&left_color=blue&right_color=red)  
 I gliched out the visitor count. lol. It was at 400 and something.
+<br/>
 Need help? Go to our [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/qgnR8CCRE3)  
 
 This script works on Mac, Windows, and Linux.  
